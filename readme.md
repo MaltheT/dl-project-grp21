@@ -2,9 +2,7 @@
 
 Initial
 
-Init submodules
-
-
+Init submodules locally first time.
 ```bash
-git submodule update --recursive
+git submodule update --recursive --init
 ```

@@ -14,3 +14,6 @@ Gym version
 pip install gym==0.25.2
 ```
 
+
+pip install torch-summary
+

@@ -57,3 +57,23 @@ class FC(nn.Module):
         x = F.relu(self.h(x))
         x = self.output(x)
         return x
+
+## FCv3
+
+class FC(nn.Module):    
+    def __init__(self, outputs):
+        super(FC, self).__init__()
+        self.flatten = nn.Flatten()
+        self.input = nn.Linear(192, 256)
+        self.h = nn.Linear(256, 256)
+        self.output = nn.Linear(256, outputs)
+    # Called with either one element to determine next action, or a batch
+    # during optimization. Returns tensor([[left0exp,right0exp]...]).
+    def forward(self, x):
+        x = x.to(device)
+        x = self.flatten(x)
+        x = F.relu(self.input(x))
+        x = F.relu(self.h(x))
+        x = F.relu(self.h(x))
+        x = self.output(x)
+        return x

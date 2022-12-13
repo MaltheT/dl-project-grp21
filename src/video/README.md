@@ -1,2 +1,0 @@
-## The final results from testing the model with no exploration rate can be found in the directory 'Results from testing'.
-All other videos are from small experimental executions, so we did not but great effort into documentation. All other directories than 'Results from testing' may, therefore, be incorrect with respect to model name and videos as we may have forgotten to change directory names when saving.
